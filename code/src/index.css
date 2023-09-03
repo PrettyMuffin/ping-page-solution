@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 20px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Franklin", sans-serif;
+  }
+}
+
+@layer components {
+  .button-shadow {
+    box-shadow: 0px 5px 10px theme("colors.paleBlue");
+  }
+
+  .verified {
+    filter: (79%) sepia(57%) saturate(4492%) hue-rotate(71deg) brightness(98%)
+      contrast(84%);
+    size: 20px;
+  }
+}
